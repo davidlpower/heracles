@@ -1,5 +1,5 @@
 # Introduction
-I utilised a standard lib (_locale_) for currency conversion and localisation. I would always encourange the use of standard libs to solve common problems, however I would not recommend writing tests for them (no need to sharpen a knife twice).
+Its been a few years since I coded. However, I utilised a standard lib (_locale_) for currency conversion and localisation. I would always encourange the use of standard libs to solve common problems, however I would not recommend writing tests for them (no need to sharpen a knife twice).
 
 ## Approach Taken
 - Positive and Negitive test cases given for demostration purposes
@@ -10,6 +10,8 @@ I utilised a standard lib (_locale_) for currency conversion and localisation. I
 ### What would I also like to add if I had time
 
 Containerise the application for improved developer portability. A Jenkins or CircleCI Pipeline would also be nice.
+
+I have a seperate project [isOnline](https://github.com/davidlpower/isonline) which uses containerisation which I think servers as a good example of how to containerise an application under test.
 
 ## CI Steps
 
