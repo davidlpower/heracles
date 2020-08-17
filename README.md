@@ -1,6 +1,8 @@
 # Introduction
 Its been a few years since I coded. However, I utilised a standard lib (_locale_) for currency conversion and localisation. I would always encourange the use of standard libs to solve common problems, however I would not recommend writing tests for them (no need to sharpen a knife twice).
 
+I linekd to two other projects which demostrate other skills I expect you want to see in this assessment. 
+
 ## Approach Taken
 - Positive and Negitive test cases given for demostration purposes
 - Utilised Parameterisation to make test cases easier to write
