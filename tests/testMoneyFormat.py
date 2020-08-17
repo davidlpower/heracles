@@ -40,6 +40,10 @@ class TestMoneyFormat(unittest.TestCase):
                 "two points of precision", 10.1234, '12',
                 "currency should contain the two points of precision"
             ),
+            (
+                "no first value given", .1234, 'Eu0,12',
+                "currency should contain a leading 0, even when none is given"
+            ),
         ])
     def test_can_format_float_to_local_with(self, _, given_value,
                                             expected_value, message):
