@@ -5,8 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+flake8 = "*"
 
 [packages]
+parameterized = "*"
+hypothesis = "*"
 
 [requires]
 python_version = "3.8"
