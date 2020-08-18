@@ -53,7 +53,7 @@ class TestMoneyFormat(unittest.TestCase):
         # Assert
         self.assertIn(expected_value, observed_value)
 
-    # Negitive Test Cases
+    # Negative Test Cases
 
     @parameterized.expand(
         [
