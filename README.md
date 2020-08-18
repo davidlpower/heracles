@@ -4,16 +4,17 @@ Its been a few years since I coded. However, I utilised a standard lib (_locale_
 I linekd to two other projects which demostrate other skills I expect you want to see in this assessment. 
 
 ## Approach Taken
-- Positive and Negitive test cases given for demostration purposes
+- Developer environment has been containerised for portability and testing (especially useful in a CI CD environement where we don't want to add every projects own unique build dependencies)
+- Positive and Negative test cases given for demonstration purposes
 - Utilised Parameterisation to make test cases easier to write
 - I would advise the use of Property Bases Testing see [example demo](https://github.com/davidlpower/property_based_testing_demo) I gave while working as a *SEQ* in 2017
 
 
 ### What would I also like to add if I had time
 
-Containerise the application for improved developer portability. A Jenkins or CircleCI Pipeline would also be nice.
+Add Jenkins or CircleCI Pipeline which ran linting first and then the unit tests. I've added `set -e` to the `run.sh` file to emulate this (fails on first script error)
 
-I have a seperate project [isOnline](https://github.com/davidlpower/isonline) which uses containerisation which I think servers as a good example of how to containerise an application under test.
+I have a seperate project [isOnline](https://github.com/davidlpower/isonline) which uses containerisation. I think it servers as another good example of how to containerise an application under test.
 
 ## CI Steps
 
@@ -34,3 +35,11 @@ I have a seperate project [isOnline](https://github.com/davidlpower/isonline) wh
 - Integration Tests
 - Contract Tests
 - E2E (Including UI) Tests
+
+
+# Running The Code
+To run this project's Linting and Tests please following these steps.
+## Prerequisites
+- Docker
+## Run
+- `./build_and_run_docker.sh`

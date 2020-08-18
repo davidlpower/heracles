@@ -18,7 +18,7 @@ class TestMoneyFormat(unittest.TestCase):
     def test_can_format_float_to_local(self):
         # Arrange
         given_value = 10.00
-        expected_value = 'Eu10,00'
+        expected_value = '10,00 EUR'
 
         # Act
         observed_value = self.money_format_under_test.format(given_value)
@@ -29,7 +29,7 @@ class TestMoneyFormat(unittest.TestCase):
     @parameterized.expand(
         [
             (
-                "currency symbol", 10.00, 'Eu',
+                "currency symbol", 10.00, 'EUR',
                 "currency should contain the Eu symbol"
             ),
             (
@@ -41,7 +41,7 @@ class TestMoneyFormat(unittest.TestCase):
                 "currency should contain the two points of precision"
             ),
             (
-                "no first value given", .1234, 'Eu0,12',
+                "no first value given", .1234, '0,12 EUR',
                 "currency should contain a leading 0, even when none is given"
             ),
         ])
